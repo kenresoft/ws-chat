@@ -3,10 +3,7 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-const client = new MongoClient(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+const client = new MongoClient(process.env.MONGODB_URI);
 
 let db;
 
